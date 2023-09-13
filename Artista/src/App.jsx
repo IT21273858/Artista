@@ -1,14 +1,19 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { AvatarCreator } from '@readyplayerme/react-avatar-creator'
+import { Avatar } from "@readyplayerme/visage";
 
 function App() {
   const [count, setCount] = useState(0)
-
+  const [avatarUrl, setAvatarUrl] = useState('');
   return (
     <>
-      <h1>Welcome artista</h1>
+      <AvatarCreator  subdomain="artista" onAvatarExported={(event)=>{
+console.log(event.data.url);
+setAvatarUrl(event.data.url) 
+      }} className='fixed top-0 left-0 z-10 w-screen h-screen'/>
+
+      { avatarUrl && <Avatar modelSrc={avatarUrl} />}
+
     </>
   )
 }
