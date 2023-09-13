@@ -1,4 +1,8 @@
 # Artista
  Virtual Fitton Room
 
-Made with React
+<b><i>Made with React</i></b>
+<b>Collaborators </b>
+Asmitha T
+Sanjeeva N
+Shangeeth V
