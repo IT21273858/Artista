@@ -1,0 +1,40 @@
+.page
+{
+    height: 100vh;
+    width: 100vw;
+    border:3px solid blue;
+    display: flex;
+    flex: 1;
+    justify-content: first baseline;
+    align-items: center;
+}
+
+.app-title
+{
+    width: 100%;
+    height: max-content;
+    border: 5px solid blue;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.product-view
+{
+    height: 88%;
+    width: 100%;
+    border: 5px solid aquamarine;
+    display: flex;
+}
+
+.button
+{
+    height: 10%;
+    width: 100%;
+    border: 5px solid darkmagenta;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: large;
+    
+}

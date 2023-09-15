@@ -1,14 +1,21 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import React, { useEffect, useState,Suspense} from 'react';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Merge, ProductPage, ProductView } from './VR_';
+
 
 function App() {
-  const [count, setCount] = useState(0)
+
 
   return (
     <>
-      <h1>Welcome artista</h1>
+    <BrowserRouter>
+    <Routes>
+     
+        <Route index element={<ProductPage/>} />
+        <Route path="/Product" element={<ProductView/>} />
+        <Route path="/Merge" element={<Merge/>} />
+      </Routes>
+      </BrowserRouter>
     </>
   )
 }
